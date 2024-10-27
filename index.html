@@ -15,12 +15,12 @@
         <div class="table-rows">
             <div class="row">
           
-                <input type="checkbox" class="selector">
-                <input type="text" class="crouse_name" placeholder="Crouse Name/ID">
+                <input type="checkbox" class="selector" checked="ture">
+                <input type="text" class="crouse-name" placeholder="Crouse Name/ID">
 
-                <select name="grade" id="grade-select">
+                <select name="grade" class="grade-select">
                     <option value="">Select Grade</option>
-                    <option value="4.3">A+</option>
+                    <option value="4.0">A+</option>
                     <option value="4.0">A</option>
                     <option value="3.7">A-</option>
                     <option value="3.3">B+</option>
@@ -31,18 +31,19 @@
                     <option value="1.7">C-</option>
                     <option value="1.3">D+</option>
                     <option value="1.0">D</option>
+                    <option value="0.7">D-</option>
                     <option value="0.0">F</option>
                 </select>
-                <input type="number" class="credits-input" min="0" placeholder="Credits point">
-                <button onclick="DeleteRow()" class="delete-row">X</button>
-            </div>
-            <div class="button-row">
-                <button onclick="NewRow()" class="add-row">Add new crouse</button>
-                <button onclick="ResetRow()" class="reset">Reset</button>
-                <button onclick="CalculatorGrades()">Submit</button>
+                <input type="number" class="credits-input" min="0" placeholder="Credits(e.g. 3)">
+                <button type="button" onclick="DeleteRow(this)" class="delete-row">X</button>
             </div>
         </div>
-        <p id="gpa-result">Your GPA: 0.00</p>
+        <div class="button-row">
+            <button onclick="AddRow()" class="add-row">Add new crouse</button>
+            <button onclick="ResetRows()" class="reset">Reset</button>
+            <button onclick="CalculatorGrades()"class="result">Get GPA</button>
+        </div>
+        <p id="gpa-result">Your GPA: </p>
     </div>
     <script src="script.js"></script>
 </body>
