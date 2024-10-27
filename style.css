@@ -78,6 +78,7 @@ button:hover{
     .credits-input {
         width: 100%; 
         margin-bottom: 10px;
+        font-size: 10px;
     }
 
     input[type="text"],
