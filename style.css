@@ -68,3 +68,33 @@ button:hover{
     font-size: 20px;
     color:#25ed2c;
 }
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; 
+    }
+
+    .crouse-name,
+    .grade-select,
+    .credits-input {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        font-size: 12px; 
+    }
+
+    button {
+        font-size: 12px; 
+        padding: 6px 10px; 
+    }
+    .button-row{
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+    #gpa-result {
+        font-size: 15px;
+    }
+}
